@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --amarillo: #FEDB39;
+    --celeste: #319DA0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body:hover .animated-header{
+    transform: scale(1.1);
+    transition-duration: 2s;
+    transition-delay: 0.1s;
+    transition-timing-function: ease;
+}
+
+header{
+    min-height: 45vh;
+    background-image: url(../assets/design1_image2.jpg);
+    background-size: cover;
+    background-position: 0 -12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header h1{
+    font-size: 7rem;
+    color: #fff;
+    background-color: rgba(64, 64, 67, 0.3);
+}
+
+header nav{
+    position: absolute;
+    top: 98%;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1.2rem;
+    margin: 2rem 6rem;
+    background-color: var(--celeste);
+    color: var(--amarillo);
+    font-weight: 500;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 1rem gray;
+}
+
+header nav a:hover{
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+main{
+    min-height: 55vh;
+    background-image: url(../assets/space.jpeg);
+    padding: 8rem 12rem 0;
+    color: #fff;
+}
+
+main div{
+    display: flex;
+    position: relative;
+}
+
+main div h2{
+    width: 100%;
+    background-color: var(--amarillo);
+    color: #000;
+    text-align: right;
+    padding-right: 2rem;
+}
+
+main img{
+    width: 10%;
+    position: absolute;
+    top: -98%;
+    left: 0%;
+}
+
+main section{
+    padding: 12rem 0 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section article{
+    width: 28%;
+    color: #000;
+    text-align: center;
+    padding: 0.3rem 0;
+    background-color: var(--celeste);
+    border-radius: 2rem;
+    position: relative;
+}
+
+main section h2{
+    color: var(--amarillo);
+}
+
+main section p{
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+main section article:last-of-type{
+    margin-right: 2rem;
+}
+
+main section article span{
+    font-size: 1.4rem;
+    background-color: #000;
+    color: var(--amarillo);
+    padding: 0.6rem;
+    border: 0.1rem solid var(--amarillo);
+    border-radius: 2rem;
+    position: absolute;
+    top: 94%;
+    right: 15%;
+}
+
+/* ##### ABOUT ##### */
+.main-about section,
+.main-contact section{
+    flex-direction: column;
+    padding: 4rem 0;
+}
+
+.main-about section article{
+    width: 75%;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.main-about section article:last-of-type{
+    margin: 2rem auto;
+}
+
+/* ##### CONTACT ##### */
+.main-contact section{
+    width: 35%;
+    margin: auto;
+    border: 0.1rem solid grey;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-top: 6rem;
+}
