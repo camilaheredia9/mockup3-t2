@@ -273,29 +273,45 @@ main section article:last-of-type{
 
 .contenedor-gameInfo article{
     width: 100%;
-    margin: 2rem 0;
+    margin: 4rem 0;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     background-color: transparent;
 }
 
-.contenedor-gameInfo table{
+table{
     width: 65%;
+    border-collapse: collapse;
+    color: #fff;
+    border: 0.2rem solid var(--amarillo);
+    border-radius: 0.6rem;
+    margin-top: 1rem;
+}
+
+th,
+td{
+    padding: 1.6rem;
+    text-align: center;
+    border: 0.1rem solid var(--amarillo);
+}
+
+th,
+.td-fecha{
+    background-color: #000;
+    font-weight: 600;
 }
 
 .info-extra{
-    width: 35%;
+    width: 28%;
     flex-direction: column;
-    padding: 2rem;
     background-color: transparent;
     color: #fff;
 }
 
 .info-extra p{
     padding: 1rem;
-    border-radius: 0.6rem;
-    border: 0.1rem solid var(--amarillo);
-    box-shadow: 0.1rem 0.1rem 1rem gray;
+    text-align: left;
 }
 
 .info-extra .sp-games{
@@ -303,4 +319,9 @@ main section article:last-of-type{
     color: var(--celeste);
     display: block;
     margin-bottom: 1rem;
+}
+
+.info-extra a{
+    color: #fff;
+    text-decoration: none;
 }
