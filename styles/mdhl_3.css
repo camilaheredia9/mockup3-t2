@@ -54,8 +54,8 @@ header nav{
 header nav a{
     text-decoration: none;
     color: #fff;
-    padding: 1.2rem;
-    margin: 2rem 6rem;
+    padding: 0.8rem;
+    margin: 0 3rem;
     background-color: var(--celeste);
     color: var(--amarillo);
     font-weight: 500;
@@ -64,8 +64,7 @@ header nav a{
 }
 
 header nav a:hover{
-    font-size: 2rem;
-    transition: 0.3s;
+    font-weight: 600;
 }
 
 main{
@@ -120,13 +119,14 @@ main section h2{
 main section p{
     margin: 1rem 0;
     font-weight: 500;
+    text-align: center;
 }
 
 main section article:last-of-type{
     margin-right: 2rem;
 }
 
-main section article span{
+.sp-con-estilos{
     font-size: 1.4rem;
     background-color: #000;
     color: var(--amarillo);
@@ -163,4 +163,144 @@ main section article span{
     padding: 2rem;
     border-radius: 2rem;
     margin-top: 6rem;
+}
+
+/* ## RULES ## */
+.contenedor-rules{
+    width: 70%;
+    margin: auto;
+    display: block;
+    padding: 5rem 0;
+    text-align: justify;
+    list-style-position: inside;
+}
+
+.div-titulos{
+    text-align: center;
+    flex-direction: column;
+}
+
+.div-titulos h2{
+    background-color: transparent;
+    text-align: center;
+    margin: 2rem 0 1rem;
+    padding-right: 0;
+    color: #fff;
+}
+
+.contenedor-rules .div-titulos p{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.div-titulos h2:last-of-type{
+    color: var(--amarillo);
+    margin-top: 1rem;
+}
+
+.contenedor-rules h3{
+    width:fit-content;
+    margin: 6rem auto 3rem;
+    padding: 0.9rem;
+    border-radius: 1rem;
+    color: var(--amarillo);
+    background-color: var(--celeste);
+}
+
+.contenedor-rules p{
+    text-align: justify;
+}
+
+.contenedor-rules p::first-letter{
+    margin-left: 3rem;
+}
+
+.contenedor-rules li{
+    margin-bottom: 3rem;
+}
+
+.contenedor-rules li::marker{
+    font-weight: 600;
+    color: var(--amarillo);
+}
+
+.lista-regulations h4,
+.lista-regulations p{
+    display: inline;
+}
+
+.lista-regulations h4{
+    color: var(--amarillo);
+}
+
+.lista-fields li{
+    margin-bottom: 1rem;
+    list-style-type: lower-alpha;
+}
+
+.lista-fields li::marker{
+    color: var(--celeste);
+}
+
+/* !!! el punto de la lista me queda por fuera o aislado con el list style inside y  */
+.contenedor-rules ul:last-of-type{
+    list-style-position: outside;
+}
+
+.contenedor-rules ul:last-of-type p::first-letter{
+    margin-left: 0;
+}
+
+
+/* ## GAME INFO ## */
+.contenedor-gameInfo{
+    width: 100%;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.contenedor-gameInfo .div-titulos h2{
+    color: #fff;
+}
+
+.contenedor-gameInfo .div-titulos p:first-of-type{
+    color: var(--amarillo);
+}
+
+.contenedor-gameInfo .div-titulos p:last-of-type{
+    font-style: italic;
+}
+
+.contenedor-gameInfo article{
+    width: 100%;
+    margin: 2rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.contenedor-gameInfo table{
+    width: 65%;
+}
+
+.info-extra{
+    width: 35%;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: transparent;
+    color: #fff;
+}
+
+.info-extra p{
+    padding: 1rem;
+    border-radius: 0.6rem;
+    border: 0.1rem solid var(--amarillo);
+    box-shadow: 0.1rem 0.1rem 1rem gray;
+}
+
+.info-extra .sp-games{
+    font-weight: 600;
+    color: var(--celeste);
+    display: block;
+    margin-bottom: 1rem;
 }
