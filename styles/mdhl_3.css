@@ -242,13 +242,12 @@ main section article:last-of-type{
     color: var(--celeste);
 }
 
-/* !!! el punto de la lista me queda por fuera o aislado con el list style inside y  */
 .contenedor-rules ul:last-of-type{
-    list-style-position: outside;
+    margin-left: 6rem;
 }
 
-.contenedor-rules ul:last-of-type p::first-letter{
-    margin-left: 0;
+.lista-allPlay{
+    list-style-position: initial;
 }
 
 
