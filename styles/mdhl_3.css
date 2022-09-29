@@ -363,7 +363,8 @@ form div{
     flex-wrap: wrap;
 }
 
-.datos-personales div{
+.datos-personales div,
+.datos-personales p{
     width: 50%;
 }
 
@@ -372,9 +373,15 @@ form div{
     display: block;
 }
 
+.datos-personales label{
+    font-weight: 600;
+}
+
 input{
     border: none;
-    border-bottom: 0.1rem solid #000;
+    border-bottom: 0.1rem solid gray;
+    background-color: transparent;
+    margin-left: 1rem;
 }
 
 .completo input{
@@ -390,12 +397,14 @@ input{
 }
 
 .info-team{
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .info-team div{
+    width: 30%;
     display: flex;
     flex-direction: column;
     margin-right: 8rem;
@@ -404,11 +413,16 @@ input{
 .info-team label{
     width: 100%;
     margin: 1rem 0;
+    font-weight: 600;
+}
+
+.info-team span,
+.firma{
     font-weight: bold;
 }
 
-.info-team span{
-    font-weight: bold;   
+form h3{
+    color: var(--celeste);
 }
 
 form p:last-of-type{
